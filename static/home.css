@@ -1,0 +1,59 @@
+@keyframes titleanim {
+  0%   {top: 93%;}
+  50%  {top: 89%;}
+  100% {top: 93%;}
+}
+
+#TitleH1 {
+	text-align: center;
+	position: absolute;
+	animation-name: titleanim;
+	animation-duration: 4s;
+ 	animation-iteration-count: infinite;
+}
+
+body {
+	background-color: orange;
+}
+
+#Berman1
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+}
+
+#InputDiv {
+  margin: auto;
+  width: 30%;
+  height: 80%;
+  margin-top: 10%;
+  border: 3px solid green;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+#BerPrompt
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+}
+
+#BerButton
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 35%;
+}
+
+#BerInput
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+}

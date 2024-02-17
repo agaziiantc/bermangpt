@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BermanGPT 7.0</title>
+  <link rel="stylesheet"  type="text/css" href="{{ url_for('static', filename='home.css') }}">
+  <h1 id="TitleH1"> BermanGPT 7.0 </h1>
+</head>
+<body>
+  <div id="InputDiv"> 
+    <img id="Berman1" src="{{ url_for('static', filename='berman1.jpg') }}" alt="Image of Berman playing guitar"> <br>
+    <!--<input id="BerInput" type="InputText" name="InputText"> <br>
+    <button id="BerButton">Generate the text!</button> <br>
+    -->
+
+    <form action="/output">
+      <!--<label id="BerInput" for="Prompt">Prompt:</label>
+      <input id="BerPrompt" type="text" id="text" name="text"><br> -->
+      <input id="BerButton" type="submit" value="Generate a Bermanic text!">
+    </form> 
+  </div>
+</body>
