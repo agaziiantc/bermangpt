@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BermanGPT 7.0</title>
+  <link rel="stylesheet"  type="text/css" href="{{ url_for('static', filename='about.css') }}">
+  <!-- <link rel="stylesheet"  type="text/css" href="about.css"> only here for development purposes -->
+
+</head>
+<body>
+  <img id="BermanBG" src="{{ url_for('static', filename='BermanBackground.png') }}">
+  <div id="ColoredBox1"> 
+    <div id="BermanDiv1"> 
+      <h1> BermanGPT7.0 </h1>
+      <h5> The Bermanic Text Generator </h5>
+    </div>
+  </div>
+  <div id="ColoredBox2"> </div>
+
+  <div id="BermanDiv2">
+    <h1> How do to use this </h1>
+    <p> Just press the generate a bermanic text button! The website will do everything else for you!</p>
+  </div>
+  <div id="BermanDiv3">
+    <h1> How it works </h1>
+    <p> BermanGPT7.0 is an LTSM model that has been trained on a lot of quotes from Dr. Berman's class using PyTorch. When you press "generate" the website activates the model and makes it generate a text based off a randomly generated prompt. </p>
+  </div>
+  <div id="BermanDiv4">
+    <h1> How it's hosted </h1>
+    <p> This website is hosted off my oracle server and uses ngrok port forwarding in order to be accessible from anywhere. This is also why the link is so weird. </p>
+  </div>
+  <div id="BermanDiv5">
+    <h1> Source code </h1>
+    <p> This website is open source and you can find all the code at <a href="https://github.com/agaziiantc/bermangpt">https://github.com/agaziiantc/bermangpt. </a> </p>
+  </div>
+  <div id="BermanDiv6">
+    <h1> Creator of the website </h1>
+    <p> This website was created by Aleksandr Gaziiantc for a dillon cs project </p>
+  </div>
+  <div id="BermanDiv7">
+    <h1> Why is BermanGPT a thing and why is it on iteration 7 </h1>
+    <p> My english teacher did not let me write a research paper on birds being government drones for the ISearch project, so I chose the next best thing of making an AI based off my global history teacher. I increased the number by 1 every time I had to remake it because something went horribly wrong (like accidentally nuking the server it's hosted on off the face of the planet or somehow making it no longer have an ip). Also I trained the model until it had a cross-entropy of 7.</p>
+  </div>
+  <div id="BermanDivFinal">
+    <h1> Enough reading? </h1>
+    <form action="/output">
+      <input id="BerButton" type="submit" value="Generate a Bermanic text!">
+    </form> 
+</body>
