@@ -34,17 +34,6 @@ body {
   background-color: lightgray;
 }
 
-#OutputDiv {
-  margin: auto;
-  width: 30%;
-  height: 80%;
-  margin-top: 10%;
-  border: 3px solid green;
-  padding: 10px;
-  background-color: lightgray;
-}
-
-
 #BerPrompt
 {
 	display: block;
@@ -67,4 +56,19 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 15%;
+}
+
+#aboutbutton {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10%;
+	background-color: yellow;
+	border: 1px solid green;
+}
+#aboutbutton2nd {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
