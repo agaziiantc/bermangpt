@@ -1,0 +1,136 @@
+@keyframes Slidein1 {
+  from {left: -20%;}
+  to {left: 25%;}
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: orange;
+  height: 100vh;
+  width: 100vh;
+}
+* {
+  box-sizing: border-box;
+}
+
+@keyframes Slidein2 {
+  from {left: -20%;}
+  to {left: 20%;}
+}
+@keyframes Slidein3 {
+  from {right: -200%; margin-right: 20%; margin-left: 40%;}
+  to {right: 0%; margin-right: 10%; margin-left: 50%;}
+}
+@keyframes Slidein4 {
+  from {left: -20%; margin-right: 0%; margin-left: 0%;}
+  to {left: 10%; margin-right: 70%; margin-left: 0%;}
+}
+
+@keyframes Slidein5 {
+  from {left: -20%; margin-right: 0%; margin-left: 0%;}
+  to {left: 20%; margin-right: 60%; margin-left: 0%;}
+}
+@keyframes Slidein6 {
+  from {left: -20%; margin-right: 0%; margin-left: 0%;}
+  to {left: 35%; margin-right: 45%; margin-left: 0%;}
+}
+
+@keyframes Slidein7 {
+  from {right: -250%; margin-right: 0%; margin-left: 0%;}
+  to {right: 0%; margin-right: 10%; margin-left: 30%;}
+}
+
+
+#BermanDiv1 {
+  position: absolute;
+  animation-name: Slidein1;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  top: 0%;
+}
+
+#BermanDiv2 {
+  position: absolute;
+  top: 15%;
+  margin: auto;
+  animation-name: Slidein2;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+}
+
+
+#BermanDiv3 {
+  position: absolute;
+  top: 50%;
+  
+  text-align: justify;
+  animation-name: Slidein3;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+}
+
+/*#ColoredBox1 {
+  width: 203vh;
+  height: 100px;
+  margin: 0 0 0 0;
+  background-color: yellow;
+}
+
+#ColoredBox2 {
+  width: 50px;
+  height: 900px;
+  left: 50%;
+  background-color: aquamarine;
+} this code will probably never be uncommented, but it bloats the line amount, so I'm keeping it*/
+
+#BermanBG {
+  width: 250%;
+}
+
+#BermanDiv4 {
+  position: absolute;
+  top: 80%;
+  animation-name: Slidein4;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+#BermanDiv5 {
+  position: absolute;
+  top: 150%;
+  animation-name: Slidein5;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+#BermanDiv6 {
+  position: absolute;
+  top: 180%;
+  animation-name: Slidein6;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+#BermanDiv7 {
+  position: absolute;
+  top: 300%;
+  animation-name: Slidein7;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes SlideinFinal {
+  from {bottom: -550%; left: -25%;}
+  to {bottom: -340%; left: 55%}
+}
+#BermanDivFinal {
+  position: absolute;
+  margin: auto;
+  width: 50%;
+  animation-name: SlideinFinal;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
