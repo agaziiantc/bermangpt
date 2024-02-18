@@ -23,7 +23,13 @@ body {
 	margin-right: auto;
 	width: 15%;
 }
-
+#Berman2
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+}
 #InputDiv {
   margin: auto;
   width: 30%;
@@ -33,6 +39,19 @@ body {
   padding: 10px;
   background-color: lightgray;
 }
+
+#OutputDiv {
+  margin: auto;
+  width: 30%;
+  height: 80%;
+  margin-top: 10%;
+  border: 3px solid green;
+  padding: 10px;
+  background-color: lightgray;
+  position: relative;
+  bottom: 20px;
+}
+
 
 #BerPrompt
 {
