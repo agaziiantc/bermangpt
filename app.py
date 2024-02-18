@@ -27,7 +27,7 @@ model.load_state_dict(best_model)
 app = Flask(__name__)
 
 @app.route('/', methods=['POST', 'GET'])
-def home():
+def homepage():
     return render_template('home.html')
 
 @app.route('/output', methods=['POST', 'GET'])
@@ -89,12 +89,28 @@ def output():
 
 
   </div>
-
+  <div id="aboutbutton">
+    <form action="/about">
+      <!--<label id="BerInput" for="Prompt">Prompt:</label>
+      <input id="BerPrompt" type="text" id="text" name="text"><br> -->
+      <input id="aboutbutton2nd" type="submit" value="About">
+    </form> 
+  </div>
   <div id="OutputDiv">
-    <img id="Berman2" src="static/berman2.jpg" alt="Insert image of berman here"> : {output}<br>
+    <img id="Berman2" src="static/berman2.png" alt="Insert image of berman here"> <br> {output}<br>
+  </div>
+  
 
 
 
 </body>"""
+
+
+@app.route('/about', methods=['POST', 'GET'])
+def home():
+    return render_template('about.html')
+
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port="8080")
