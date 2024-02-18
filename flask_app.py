@@ -61,11 +61,15 @@ def output():
             # convert logits into one character
             index = int(prediction.argmax())
             result = int_to_char[index]
-            output += result
+            if result == '"':
+                result = ''
+            if result != '"':
+                output += result
             print(result, end="")
             # append the new character into the prompt for the next iteration
             pattern.append(index)
             pattern = pattern[1:]
+    output = output.replace('"', '').strip('"')
     return f"""
 <!DOCTYPE html>
 <html>
@@ -97,7 +101,7 @@ def output():
     </form> 
   </div>
   <div id="OutputDiv">
-    <img id="Berman2" src="static/berman2.png" alt="Insert image of berman here"> <br> {output}<br>
+    <img id="Berman2" src="static/berman2.png" alt="Insert image of berman here"> <br> {output.replace('"', '')}<br>
   </div>
   
 
